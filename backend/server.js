@@ -458,7 +458,7 @@ app.get("/stock/data",async function(req,res,next){
   //         },
   //     })
 
-  //   console.log(response.data);
+  //   console.log(response.data)
 
   //   const symbol = response.data.quotes[0].symbol.slice(0,-3);
   

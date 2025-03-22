@@ -588,7 +588,7 @@ app.get("/stock/data",async function(req,res,next){
 
     console.log(isin)
   
-    // If ISIN is not found, return a 404 error
+    // If ISIN is not found, return a 404 error stating stock not found
     if (!isin) {
       return res.status(404).json({ message: 'Stock not found' });
     }

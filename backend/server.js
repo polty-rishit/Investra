@@ -409,7 +409,8 @@ app.post('/stocks/sell', isAuth, async function(req,res){
     res.send("Something went Wrong !!")
   }
   //check price and add price*req.body.quanity to balance
-  //adjust average
+  //adjust average and price
+  
 
   res.send("Stock sold successfully")
 })

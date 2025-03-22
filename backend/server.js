@@ -131,6 +131,7 @@ app.post('/send-otp',async function(req,res) {
           console.log(error);
           return res.status(500).send(error);
         });
+        //sending mail can be more encrypted
 
       await UserModel.updateOne({email:email},{$set:{otp:otp}}); //updating otp in database
     }
